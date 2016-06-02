@@ -6,7 +6,7 @@ echo Update Graal Compiler
 
 cd graal-compiler
 git pull graalvm master
-git push smarr master
+git push origin master
 GRAAL_REV=`git rev-parse HEAD`
 cd ..
 
@@ -19,3 +19,4 @@ echo "Commit update to ${GRAAL_REV}"
 git add graal-compiler
 git add mx
 git commit -m "Updated graal-core to ${GRAAL_REV}"
+git push origin master

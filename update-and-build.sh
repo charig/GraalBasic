@@ -12,15 +12,8 @@ GRAAL_REV=`git rev-parse HEAD`
 cd ..
 
 echo 
-echo Update and Push SOMns
-cd ../SOMns/
-./.graal-git-rev
-git commit -m "Update graal to ${GRAAL_REV}" .graal-git-rev
-git push
-
-echo 
-echo Update and Push TruffleSOM
-cd ../TruffleSOM
-cp $GRAAL_DIR/../SOMns/.graal-git-rev .
+echo Update and Push TruffleMate
+cd ../TruffleMate
+cp $GRAAL_DIR/../TruffleMate/.graal-git-rev .
 git commit -m "Update graal to ${GRAAL_REV}" .graal-git-rev
 git push
