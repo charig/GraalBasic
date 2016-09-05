@@ -18,7 +18,7 @@ echo
 echo Update Graal Compiler
 cd graal-core
 git pull graalvm master
-git push charig master
+git push origin master
 ../mx/mx sforceimport
 GRAAL_REV=`git rev-parse HEAD`
 cd ..
